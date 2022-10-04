@@ -1,24 +1,30 @@
 package org.veta.tests;
 
 import com.codeborne.selenide.Configuration;
+import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import java.util.Locale;
+
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static org.veta.tests.TestData.*;
 import static org.veta.utils.RandomUtils.*;
 
-public class RegistrationFormWithRandomUtilsTests {
-   String firstName = getRandomString(10);
-   String lastName = getRandomString(10);
-   String email = getRandomEmail();
-   String currentaddress = getRandomStringAlphabetic(10);
-   String phone = getRandomPhone(7);
-   String day = "10";
-   String month = "January";
-   String year = "2000";
+public class RegistrationFormWithFakerTests {
+    //Faker faker = new Faker();
+    Faker faker = new Faker(new Locale("de"));
+    String streetAddress = faker.address().streetAddress();
+    String firstName = faker.name().firstName();
+    String lastName = faker.name().lastName();
+    String email = faker.internet().emailAddress();
+    String currentaddress = faker.address().fullAddress();
+    String phone = faker.phoneNumber().subscriberNumber(10);
+    String day = "10";
+    String month = "January";
+    String year = "2000";
 
     @BeforeAll
     static void configure() {
@@ -26,6 +32,7 @@ public class RegistrationFormWithRandomUtilsTests {
         Configuration.browserSize = "1920x1080";
         Configuration.holdBrowserOpen = true;
     }
+
     @Test
     void fillFormTest() {
         open("/automation-practice-form");
@@ -39,7 +46,7 @@ public class RegistrationFormWithRandomUtilsTests {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption(month);
         $(".react-datepicker__year-select").selectOption(year);
-        $(".react-datepicker__day--0"+day+":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__day--0" + day + ":not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Art").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#uploadPicture").uploadFromClasspath("img/7.png");
@@ -52,18 +59,18 @@ public class RegistrationFormWithRandomUtilsTests {
 
         $(".modal-dialog").should(appear);
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive table").shouldHave(text(firstName+" "+lastName),
+        $(".table-responsive table").shouldHave(text(firstName + " " + lastName),
                 text(email),
                 text("Male"),
                 text(phone),
-                text(day+" "+month+","+year),
+                text(day + " " + month + "," + year),
                 text("Arts"),
                 text("Sports"),
                 text("7.png"),
                 text(currentaddress),
                 text("NCR Delhi"));
         $(".table-responsive table").$(byText("Student Name"))
-                .parent().shouldHave(text(firstName+" "+lastName));
+                .parent().shouldHave(text(firstName + " " + lastName));
         $(".table-responsive table").$(byText(email))
                 .parent().shouldHave(text(email));
         $(".table-responsive table").$(byText("Gender"))
@@ -71,7 +78,7 @@ public class RegistrationFormWithRandomUtilsTests {
         $(".table-responsive table").$(byText("Mobile"))
                 .parent().shouldHave(text(phone));
         $(".table-responsive table").$(byText("Date of Birth"))
-                .parent().shouldHave(text(day+" "+month+","+year));
+                .parent().shouldHave(text(day + " " + month + "," + year));
         $(".table-responsive table").$(byText("Subjects"))
                 .parent().shouldHave(text("Arts"));
         $(".table-responsive table").$(byText("Hobbies"))

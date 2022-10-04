@@ -28,7 +28,7 @@ public class RandomUtils {
         return ThreadLocalRandom.current().nextLong(min, max);
     }
 
-    public static String getRandomPhone() {
-        return "+000"+getRandomLong(111111111L, 99999999999L).toString();
+    public static String getRandomPhone(int length) {
+        return "000"+getRandomLong(111111111L, 99999999999L).toString();
             }
 }
