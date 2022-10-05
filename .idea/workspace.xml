@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b58bc1-f3ab-4b1f-94b1-a9868405dbeb" name="Changes" comment="with random utils.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/tests/RegistrationFormWithFakerTests.java" afterDir="false" />
+    <list default="true" id="73b58bc1-f3ab-4b1f-94b1-a9868405dbeb" name="Changes" comment="with faker">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/testData/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/tests/withPageObjectsJavaFaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/utils/Month.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/tests/RegistrationFormWithRandomUtilsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/veta/tests/RegistrationFormWithRandomUtilsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/utils/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/veta/utils/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/tests/withPageObjects.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <recent name="org.veta.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationFormWithFakerTests">
+  <component name="RunManager" selected="Gradle.withPageObjects (1)">
     <configuration name="RegistrationFormWithFakerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,8 +112,56 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="withPageObjects (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.veta.tests.withPageObjects&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="withPageObjects.fillFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.veta.tests.withPageObjects.fillFormTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.withPageObjects (1)" />
+        <item itemvalue="Gradle.withPageObjects.fillFormTest" />
         <item itemvalue="Gradle.RegistrationFormWithFakerTests" />
         <item itemvalue="Gradle.RegistrationFormWithRandomUtilsTests (1)" />
       </list>
@@ -142,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664913181925</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="with faker">
+      <created>1664915700593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664915700593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,17 +214,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="with random utils" />
     <MESSAGE value="with random utils." />
-    <option name="LAST_COMMIT_MESSAGE" value="with random utils." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/veta/tests/RegistrationFormWithFakerTests.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="with faker" />
+    <option name="LAST_COMMIT_MESSAGE" value="with faker" />
   </component>
 </project>
