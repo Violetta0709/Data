@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.veta.pages.RegistrationFormPage;
 import org.veta.testData.Student;
 
-public class withPageObjectsJavaFaker extends TestBase{
+public class WithPageObjectsJavaFakerTest extends TestBase{
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
 
     @DisplayName("Test of registration form")

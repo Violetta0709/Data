@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73b58bc1-f3ab-4b1f-94b1-a9868405dbeb" name="Changes" comment="with faker">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/testData/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/tests/withPageObjectsJavaFaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/veta/utils/Month.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/tests/withPageObjects.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/pages/RegistrationFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/veta/pages/RegistrationFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/testData/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/veta/testData/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/veta/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/veta/tests/withPageObjectsJavaFaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/veta/tests/WithPageObjectsJavaFakerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +56,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -65,8 +65,8 @@
       <recent name="org.veta.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.withPageObjects (1)">
-    <configuration name="RegistrationFormWithFakerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.WithPageObjectsJavaFakerTest">
+    <configuration name="WithPageObjectsJavaFakerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -79,7 +79,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.veta.tests.RegistrationFormWithFakerTests&quot;" />
+            <option value="&quot;org.veta.tests.WithPageObjectsJavaFakerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -89,7 +89,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationFormWithRandomUtilsTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WithPageObjectsJavaFakerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -102,7 +102,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.veta.tests.RegistrationFormWithRandomUtilsTests&quot;" />
+            <option value="&quot;org.veta.tests.WithPageObjectsJavaFakerTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WithPageObjectsJavaFakerTests.fillFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.veta.tests.WithPageObjectsJavaFakerTests.fillFormTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,10 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WithPageObjectsJavaFakerTest" />
+        <item itemvalue="Gradle.WithPageObjectsJavaFakerTests" />
+        <item itemvalue="Gradle.WithPageObjectsJavaFakerTests.fillFormTest" />
         <item itemvalue="Gradle.withPageObjects (1)" />
         <item itemvalue="Gradle.withPageObjects.fillFormTest" />
-        <item itemvalue="Gradle.RegistrationFormWithFakerTests" />
-        <item itemvalue="Gradle.RegistrationFormWithRandomUtilsTests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664915700593</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="with faker">
+      <created>1665000655037</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665000655037</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
